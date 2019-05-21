@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora2</title>
+	<link rel="stylesheet" href="css/estilo3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+
+
+<div id="contenedor">
+		<header>
+			<h1>FOX ELECTRONICS S.A</h1>
+		</header>
+
+<div class="container">
+<h1>Calculadora de Utilidades</h1>
+<script>
+function suma(){
+  var a = document.f1.a.value;
+  var b = document.f1.b.value;
+  var r = document.f1.c.value;
+  r=parseFloat(a)+parseFloat(b);
+  document.f1.c.value=r;
+
+}
+function resta() {
+  var a = document.f1.a.value;
+  var b = document.f1.b.value;
+  var r = document.f1.c.value;
+  r=parseFloat(a)-parseFloat(b);
+  document.f1.c.value=r;
+
+}
+function multiplicacion(){
+  var a = document.f1.a.value;
+  var b = document.f1.b.value;
+  var r = document.f1.c.value;
+  r=parseFloat(a)*parseFloat(b);
+  document.f1.c.value=r;
+
+}
+function division(){
+  var a = document.f1.a.value;
+  var b = document.f1.b.value;
+  var r = document.f1.c.value;
+  r=parseFloat(a)/parseFloat(b);
+  //document.f1.c.value=r;
+  alert('El resultado de dividir es:'+r);
+
+}
+function porcentaje() {
+  var a = document.f1.a.value;
+  var b = document.f1.b.value;
+  var r = document.f1.c.value;
+  r=parseFloat(a)*(parseFloat(b)/100);
+  document.f1.c.value=r;
+
+}
+
+</script>
+
+<img src="imagenes/archivo4.jpg" width="515" height="290" alt="https://www.google.com/search?q=calculadora&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjG9fapsrThAhXN11kKHZniAcsQ_AUIDigB&biw=1366&bih=625#imgdii=baq4csAnKls-pM:&imgrc=UAt8vyOX3QzTLM:" >
+
+<form name="f1" action="=Calculadora2.html" method="POST">
+  <div class="form-group">
+  <label for="numero1">1. Valor</label>
+  <input type="text" class="form-control" id="a" placeholder="Ingrese un numero"name="a">
+
+  <br>
+  <label for="numero2">2. Valor</label>
+  <input type="text" class="form-control" id="b" placeholder="Ingrese un numero"name="b">
+  <br>
+
+  <input type="Button" name="" value="sumar" onclick="suma()" class="btn btn-warning">
+  <input type="Button" name="" value="restar" onclick="resta()" class="btn btn-warning">
+  <input type="Button" name="" value="multiplicar" onclick="multiplicacion()" class="btn btn-warning">
+  <input type="Button" name="" value="dividir" onclick="division()" class="btn btn-warning">
+  <input type="Button" name="" value="porcentaje" onclick="porcentaje()" class="btn btn-warning">
+  <input type="Button" name="" value="limpiar" onclick="reset()" class="btn btn-dark">
+  <br>
+  <br>
+  <label for="resultado">Resultado</label>
+  <input type="text" class="form-control"id="c"name= "c" placeholder="Aqui puede ver su resultado">
+  </div>
+  </form>
+
+</div>
+
+
+	
+  <footer>
+			<h2>Software app server</h2>
+			</footer>
+	</div>
+	
+</body>
+</html>

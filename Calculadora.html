@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Aplicativo Web</title>
+	<link rel="stylesheet" href="css/estilos2.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+
+
+<div id="contenedor">
+		<header>
+			<h1>FOX ELECTRONICS S.A</h1>
+		</header>
+
+<div class="container">
+<h1>Calculadora de resistencias</h1>
+<script>
+function calcular() {
+  var a = document.f1.b1.value;
+  var b = document.f1.b2.value;
+  var x = document.f1.b3.value;
+  var r = document.f1.c.value;
+  r1= a.toString()+b.toString();
+  r=parseFloat(r1)*parseFloat(x);
+  document.f1.c.value=r;
+
+}
+
+</script>
+<img src="imagenes/logo 2.png" width="470" height="300" alt="logo">
+<form name="f1" action="=resistencia.html" method="POST">
+ <h3>Banda 1</h3>
+<select name="b1" class="form-control">
+    <option value="">Seleccione - </option>
+    <option value="0">Negro</option>
+    <option value="1">Marron</option>
+    <option value="2">Rojo</option>
+    <option value="3">Naranja</option>
+    <option value="4">Amarilo</option>
+    <option value="5">Verde</option>
+    <option value="6">Azul</option>
+    <option value="7">Violeta</option>
+    <option value="8">Gris</option>
+    <option value="9">Blanco</option>
+</select>
+
+
+  <h3>Banda 2</h3>
+<select name="b2" class="form-control">
+
+    <option value="">Seleccione - </option>
+    <option value="0">Negro</option>
+    <option value="1">Marron</option>
+    <option value="2">Rojo</option>
+    <option value="3">Naranja</option>
+    <option value="4">Amarilo</option>
+    <option value="5">Verde</option>
+    <option value="6">Azul</option>
+    <option value="7">Violeta</option>
+    <option value="8">Gris</option>
+    <option value="9">Blanco</option>
+</select>
+
+  <h3>Banda 3</h3>
+<select name="b3" class="form-control">
+    <option value="">Seleccione - </option>
+    <option value="1">Negro</option>
+    <option value="10">Marron</option>
+    <option value="100">Rojo</option>
+    <option value="1000">Naranja</option>
+    <option value="10000">Amarilo</option>
+    <option value="100000">Verde</option>
+    <option value="1000000">Azul</option>
+    <option value="10000000">Violeta</option>
+    <option value="100000000">Gris</option>
+    <option value="1000000000">Blanco</option>
+</select>
+
+  <input type="Button" name="" value="calcular" onclick="calcular()" class="btn btn-primary">
+  <br><br>
+  <label for="resultado">Resultado Ω :</label>
+  <input type="text" class="form-control" id="c" name="c" placeholder="Resultado en Ohmios --">
+  <br>
+  <input type="Button" name="" value="limpiar" onclick="reset()" class="btn btn-dark">
+
+ </div>
+  </form>
+
+</div>
+
+
+	
+  <footer>
+			<h2>Software app server</h2>
+			</footer>
+	</div>
+	
+</body>
+</html>
